@@ -1,0 +1,11 @@
+---
+applications:
+- name: reservation-client
+  memory: 768MB
+  path: target/reservation-client-0.0.1-SNAPSHOT.jar
+  services:
+   - service-registry
+   - circuit-breaker-dashboard
+   - config-service
+   - rabbitmq
+ 

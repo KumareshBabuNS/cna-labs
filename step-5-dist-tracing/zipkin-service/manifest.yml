@@ -1,0 +1,11 @@
+---
+applications:
+- name: zipkin-service
+  memory: 768MB
+  path: target/zipkin-service-0.0.1-SNAPSHOT.jar
+  services:
+   - service-registry
+   - config-service
+   - rabbitmq
+
+ 
